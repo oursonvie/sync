@@ -22,7 +22,7 @@ JsonRoutes.add('get', '/login', function(req, res, next) {
 
     var url = 'https://api.weixin.qq.com/sns/jscode2session?appid=APPID&secret=SECRET&js_code=JSCODE&grant_type=authorization_code'
 
-    HTTP.call( 'GET', 'https://api.weixin.qq.com/sns/jscode2session?=APPID&secret=SECRET&js_code=JSCODE&grant_type=authorization_code', {
+    HTTP.call( 'GET', 'https://api.weixin.qq.com/sns/jscode2session', {
       params: {
         "appid" : appid,
         "secret" : secret,
