@@ -15,6 +15,8 @@ JsonRoutes.add('get', '/login', function(req, res, next) {
 
     var wxRES = req.query.res
 
+    console.log(wxRES)
+
     var jscode = wxRES.code
     console.log(jscode)
     var appid = 'wx49c58d3d75baabf1'
