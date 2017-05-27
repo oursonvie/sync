@@ -11,8 +11,7 @@ JsonRoutes.add('get', '/api', function(req, res, next) {
 });
 
 JsonRoutes.add('get', '/login', function(req, res, next) {
-    console.log(req.params);
-    console.log(req.query);
+    console.log(req.query.res);
 
 
 
