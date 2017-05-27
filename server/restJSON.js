@@ -11,14 +11,10 @@ JsonRoutes.add('get', '/api', function(req, res, next) {
 });
 
 JsonRoutes.add('get', '/login', function(req, res, next) {
-    console.log(req.query.res);
+    console.log(req.query);
+    console.log(req.query.code)
 
-    var wxRES = req.query.res
-
-    console.log(wxRES)
-
-    var jscode = wxRES.code
-    console.log(req.query.res.code)
+    var jscode = req.query.code
     var appid = 'wx49c58d3d75baabf1'
     var secret = '49abff6b3020dd657a45534ca2f99e9c'
 
