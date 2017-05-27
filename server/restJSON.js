@@ -45,7 +45,7 @@ JsonRoutes.add('get', '/login', function(req, res, next) {
 // program API
 JsonRoutes.add('get', '/userInfo', function(req, res, next) {
 
-  var userInfo = req.query.userInfo
+  var userInfo = JSON.parse(req.query.userInfo)
   console.log(userInfo)
   console.log(userInfo.iv)
 
