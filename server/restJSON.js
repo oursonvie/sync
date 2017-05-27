@@ -31,7 +31,12 @@ JsonRoutes.add('get', '/login', function(req, res, next) {
       if ( error ) {
         console.log( error );
       } else {
-        console.log( response );
+        if (response.statusCode == 200) {
+          var result = response.content
+          console.log(result)
+        } else {
+          console.log('error')
+        }
       }
     });
 
